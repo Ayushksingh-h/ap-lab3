@@ -1,11 +1,8 @@
-class Rum extends Decorator {
-    Rum (Offering offering) {
-        this.offering = offering;
+class Rum extends Beverage{
+    protected void addCondiment(){
+        System.out.println("Add Coca-Cola");
     }
-    String getName() {
-        return offering.getName() + " with Rum";
-    }
-    int getPrice() {
-        return offering.getPrice() + 55;
+    protected void stir(){
+        System.out.println("Stir for 15 sec");
     }
 }
